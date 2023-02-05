@@ -1,7 +1,7 @@
 
 // FILL THIS OUT
-
-class Food {
+const {Item} = require('./item');
+class Food extends Item {
 
 }
 

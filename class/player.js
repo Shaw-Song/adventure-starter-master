@@ -34,6 +34,9 @@ class Player {
     takeItem(itemName) {
 
         // Fill this in
+        this.items.push(this.currentRoom.getItemByName(itemName));
+        
+
 
     }
 
@@ -50,6 +53,12 @@ class Player {
     getItemByName(name) {
 
         // Fill this in
+        for (let item of this.items) {
+            if (item.name === name) {
+                return item;
+            }
+        }
+
     }
 }
 
